@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import FeedbackContext from './context/FeedbackContext';
 
-const FeedbackStats = ({ feedback }) => {
+const FeedbackStats = () => {
+
+    const { feedback } = useContext(FeedbackContext);
 
     // console.log(feedback);
 
@@ -9,7 +12,7 @@ const FeedbackStats = ({ feedback }) => {
         return (acc + curr.rating)
     }, 0) / feedback.length;
 
-    average=average.toFixed(1).replace(/[.,]0$/,'');
+    average = average.toFixed(1).replace(/[.,]0$/, '');
     // this will not give rating in point, also the regular expression will remove .0
 
 
