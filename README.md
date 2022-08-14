@@ -1,3 +1,6 @@
 FeedBack UI App using React Js.
-App link -> https://feedbackuiappp.netlify.app/
+<br>
 Used mock backend or json server.
+<br>
+"npm dev run" to start app.
+
